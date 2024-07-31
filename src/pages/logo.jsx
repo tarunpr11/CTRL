@@ -1,21 +1,38 @@
 import React from 'react'
 import "./style.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import logoSrc from '../../public/assets/logo.png'; // Assuming you are using the correct path for importing images
+import instaSrc from '../../public/assets/instagram.png'
+import chatSrc from '../../public/assets/chat.png'
+
 
 const LogoDemo = () => {
   return (
     <div>
       <div className='logo'>
           <button>
-              <img src='../../assets/logo.png' alt='Ctrl. logo' />
+          <Image
+            src={logoSrc}
+            alt='Ctrl. logo'
+            width={50}  // Specify the width of the image
+            height={50} // Specify the height of the image
+          />
           </button>   
       </div>
       <div className='reachout'>
         <a className='instagram' href='https://www.instagram.com/ctrldotin/'>
-          <img src='../../assets/instagram.png' alt='instagram logo' width={45}/>
+        <Image
+            src={instaSrc}
+            alt='Ctrl. logo'
+            width={45}  // Specify the width of the image
+          />
         </a>
         <a className='contact' href='#contact'>
-        <img src="../../assets/chat.png" alt="chat" width={55}/>
+        <Image
+            src={chatSrc}
+            alt='Ctrl. logo'
+            width={55}  // Specify the width of the image
+          />
         </a>
       </div>
     </div>
