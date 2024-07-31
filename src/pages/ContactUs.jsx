@@ -1,6 +1,6 @@
 import React from 'react'
-import { SignupFormDemo } from './contactform'
-import {GlobeDemo} from "./globe"
+import SignupFormDemo from './contactform'
+import GlobeDemo from "./globe"
 import "./style.css"
 
 const ContactUs = () => {

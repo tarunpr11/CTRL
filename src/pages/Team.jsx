@@ -1,6 +1,6 @@
 import React from "react";
 import "../pages/style.css";
-import { BackgroundBeamsDemo } from "./Background2";
+import BackgroundBeamsDemo from "./Background2";
 
 const Team = () => {
   return (

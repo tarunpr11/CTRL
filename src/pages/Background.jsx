@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { FlipWordsDemo } from "./FlipWords";
+import FlipWordsDemo from "./FlipWords";
 
 const Background = () => {
   return (

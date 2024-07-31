@@ -1,7 +1,7 @@
 import React from "react";
-import { ThreeDCardDemo } from "../pages/Card";
+import ThreeDCardDemo from "../pages/Card";
 import "./style.css";
-import { SparklesPreview } from "../pages/WhatWeDoTitle";
+import SparklesPreview from "../pages/WhatWeDoTitle";
 
 const Services = () => {
   return (

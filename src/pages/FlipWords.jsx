@@ -2,7 +2,7 @@ import React from "react";
 import { FlipWords } from "../components/ui/flip-words";
 import "./style.css";
 
-export function FlipWordsDemo() {
+const FlipWordsDemo = () => {
   const words = ["better", "cute", "beautiful", "modern"];
 
   return (
@@ -15,3 +15,5 @@ export function FlipWordsDemo() {
     </div>
   );
 }
+
+export default FlipWordsDemo

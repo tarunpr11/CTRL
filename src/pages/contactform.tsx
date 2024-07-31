@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import "./style.css";
 
 
-export function SignupFormDemo() {
+const SignupFormDemo = () => {
   const [state, handleSubmit] = useForm("xyzgweow");
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   // Define state for form fields (you'll need to define the corresponding state and setters)
@@ -142,3 +142,5 @@ const LabelInputContainer = ({
     </div>
   );
 };
+
+export default SignupFormDemo

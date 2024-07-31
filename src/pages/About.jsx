@@ -1,7 +1,7 @@
 import React from "react";
-import { TextGenerateEffectDemo } from "../pages/TextGenerateEffectDemo";
+import TextGenerateEffectDemo from "../pages/TextGenerateEffectDemo";
 import "./style.css";
-import { LampDemo } from "../pages/lamp";
+import LampDemo from "../pages/lamp";
 
 const About = () => {
   return (
