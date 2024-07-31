@@ -418,7 +418,7 @@ export function GlobeDemo() {
             From Our Home to Yours,{" "}
           </h2>
           <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            We've Got You Covered
+            We&apos;ve Got You Covered
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
