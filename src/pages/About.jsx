@@ -5,7 +5,7 @@ import LampDemo from "../pages/lamp";
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className="about-container">
       <LampDemo className="lamp-component" />
       <TextGenerateEffectDemo className="text-generate-component" />
     </div>
@@ -13,3 +13,4 @@ const About = () => {
 };
 
 export default About;
+

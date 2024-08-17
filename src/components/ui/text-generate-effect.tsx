@@ -28,35 +28,35 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [scope, animate, filter, duration]);
 
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className="dark:text-white text-black opacity-0 about-word"
-              style={{
-                filter: filter ? "blur(10px)" : "none",
-              }}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
+        {wordsArray.map((word, idx) => (
+          <motion.span
+            key={word + idx}
+            className="dark:text-white text-black opacity-0 about-word"
+            style={{
+              filter: filter ? "blur(10px)" : "none",
+            }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
       </motion.div>
     );
   };
-
+  
   return (
     <div className={cn("font-bold", className)}>
-      <div className="mt-4">
-        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide about-content">
+      <div className="mt-4 max-w-screen-lg">
+        <div className="dark:text-white text-black text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-snug tracking-wide about-content text-justify">
           {renderWords()}
         </div>
       </div>
     </div>
   );
+  
+  
 };

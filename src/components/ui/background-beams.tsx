@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import "../../pages/style.css"
 
 const BackgroundBeams = React.memo(
   ({ className }: { className?: string }) => {
@@ -61,7 +60,7 @@ const BackgroundBeams = React.memo(
     return (
       <div
         className={cn(
-          "absolute  h-full w-full inset-0  [mask-size:40px] [mask-repeat:no-repeat] team-element justify-center",
+          "relative h-full w-full [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center",
           className
         )}
       >
@@ -134,58 +133,39 @@ const BackgroundBeams = React.memo(
             </radialGradient>
           </defs>
         </svg>
-        <div className="team-dark-title-container">
+
+        <div className="team-content">
+        <div className="max-w-2xl p-4 mx-auto flex flex-col items-center justify-center team-space">
           <h1 className="team-dark-title">Our Team</h1>
-        </div>
-        <div className="team-dark-content">
-          <div className="team-dark-card-container">
+          <div className="team-dark-card-container max-w-2xl p-4 mx-auto flex justify-center items-center">
             {/* TARUN PARTHIBAN - CEO */}
             <div className="team-dark-card c1-dark">
-              <img
-                src="assets/team-1.png"
-                alt="tarun"
-                className="team-dark-card-img"
-              />
+              <img src="assets/team-1.png" alt="tarun" className="team-dark-card-img" />
               <h1 className="team-dark-card-title">Tarun Parthiban - CEO</h1>
             </div>
             {/* KISHORE P - CTO */}
             <div className="team-dark-card c2-dark">
-              <img
-                src="assets/team-2.png"
-                alt="kishore"
-                className="team-dark-card-img"
-              />
+              <img src="assets/team-2.png" alt="kishore" className="team-dark-card-img" />
               <h1 className="team-dark-card-title">Kishore P - CTO</h1>
             </div>
             {/* LOGESH KAAVYAN - CSO */}
             <div className="team-dark-card c3-dark">
-              <img
-                src="assets/team-3.png"
-                alt="logesh"
-                className="team-dark-card-img"
-              />
+              <img src="assets/team-3.png" alt="logesh" className="team-dark-card-img" />
               <h1 className="team-dark-card-title">Logesh Kaavyan - CSO</h1>
             </div>
             {/* BENETA JOHNSON - COO */}
             <div className="team-dark-card c4-dark">
-              <img
-                src="assets/team-4.png"
-                alt="beneta"
-                className="team-dark-card-img"
-              />
+              <img src="assets/team-4.png" alt="beneta" className="team-dark-card-img" />
               <h1 className="team-dark-card-title">Beneta Johnson - COO</h1>
             </div>
             {/* SHIVA SANJAY - CMO */}
             <div className="team-dark-card c5-dark">
-              <img
-                src="assets/team-5.png"
-                alt="sanjay"
-                className="team-dark-card-img"
-              />
+              <img src="assets/team-5.png" alt="sanjay" className="team-dark-card-img" />
               <h1 className="team-dark-card-title">Shiva Sanjay - CMO</h1>
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
@@ -193,4 +173,4 @@ const BackgroundBeams = React.memo(
 
 BackgroundBeams.displayName = "BackgroundBeams";
 
-export default BackgroundBeams
+export default BackgroundBeams;

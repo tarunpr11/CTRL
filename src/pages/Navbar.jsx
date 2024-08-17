@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "../components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconBriefcase, IconHome, IconInfoCircle, IconMessage, IconTool, IconTools, IconTooltip, IconUser, IconUsers } from "@tabler/icons-react";
 const FloatingNavDemo = () => {
   const navItems = [
     {
@@ -14,20 +14,20 @@ const FloatingNavDemo = () => {
       name: "About",
       link: "/",
       sectionid: "about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconInfoCircle className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Services",
       link: "/",
       sectionid: "services",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Our Team",
       link: "/",
       sectionid: "team",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconUsers className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];

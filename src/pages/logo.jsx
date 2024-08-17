@@ -14,8 +14,7 @@ const LogoDemo = () => {
           <Image
             src={logoSrc}
             alt='Ctrl. logo'
-            width={50}  // Specify the width of the image
-            height={50} // Specify the height of the image
+            width={85}  // Specify the width of the image
           />
           </button>   
       </div>

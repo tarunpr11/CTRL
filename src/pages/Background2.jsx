@@ -1,16 +1,17 @@
-"use client";
-import React from "react";
-import BackgroundBeams from "../components/ui/background-beams";
-import "../pages/style.css";
+'use client';
+import React from 'react';
+import BackgroundBeams from '../components/ui/background-beams';
+import '../pages/style.css'; // Ensure your CSS is imported
 
 const BackgroundBeamsDemo = () => {
   return (
-    <div className="h-[60rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="max-w-2xl mx-auto p-4">
+    <div className="container my-20">
+      <div className="background-beams-wrapper parent-container h-screen w-full relative">
         <BackgroundBeams />
-      </div>
+        </div>
     </div>
+    
   );
 }
 
-export default BackgroundBeamsDemo
+export default BackgroundBeamsDemo;
