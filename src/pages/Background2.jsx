@@ -6,7 +6,7 @@ import '../pages/style.css'; // Ensure your CSS is imported
 const BackgroundBeamsDemo = () => {
   return (
     <div className="container my-20">
-      <div className="background-beams-wrapper parent-container h-screen w-full relative">
+      <div className="background-beams-wrapper parent-container h-screen w-full my-20">
         <BackgroundBeams />
         </div>
     </div>

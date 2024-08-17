@@ -16,6 +16,8 @@ html{
   margin-bottom: 0;
 }
 
+
+
 /* style.css */
 
 .logo{
@@ -529,6 +531,23 @@ html{
   /* sm: */
   .lamp-container {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 640px){
+  .background-beams-wrapper{
+    margin-top: 25rem;
+    margin-bottom: 22rem;
+  }
+
+  .c1-dark,.c3-dark,.c5-dark{
+    padding-right: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  .c2-dark,.c4-dark{
+    padding-left: 7rem;
+    padding-bottom: 2rem;
   }
 }
 
